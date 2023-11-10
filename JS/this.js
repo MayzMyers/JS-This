@@ -10,7 +10,6 @@ function task1() {
   console.log(createPCLink(1001));
   console.log(createNotebooksLink(4004));
   console.log(createMonitorLink(345));
-  ˇ;
 }
 
 function task2() {
