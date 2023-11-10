@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Задача №4</title>
+  </head>
+  <body>
+    <h1>
+      Изменить код метода wrapperA таким образом, чтобы добавлялся анкор (текст)
+      ссылки. Текст передавать массивом. <br />
+      function Menu(...navList){ <br />
+      this.navList=navList; <br />this.wrapperA=function(){ <br />
+      return this.navList.map(elem=>`&lt;a&gt; href="${elem}" >item&lt;a&gt;`);
+      } } <br />let mainMenu=new
+      Menu("home.html","services.html","price.html","about.html");<br />
+      for (elem of mainMenu.navList) <br />
+      console.log(elem);<br />
+      console.log(mainMenu.wrapperA()); <br />let footerMenu=new
+      Menu("newPage.html","checkPage.html","seoPage.html");<br />
+      for (elem of footerMenu.navList) <br />console.log(elem);<br />
+      console.log(footerMenu.wrapperA());
+    </h1>
+    <script src="JS/this.js"></script>
+    <script>
+      task4();
+    </script>
+  </body>
+</html>
