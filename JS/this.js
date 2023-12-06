@@ -33,7 +33,7 @@ function task2() {
       quantity: 100,
     },
   ];
-  function getOrder(fio, price, quantity) {
+  function getOrder() {
     console.log(
       `Заказ покупателя ${this.fio} составил ${this.price * this.quantity}`
     );
